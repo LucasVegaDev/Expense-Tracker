@@ -64,14 +64,23 @@
     </div>
     
     <!-- NEW TRANSACTION -->
-    <div class="newTransaction">
-        <label for="text">New transaction</label>
-        <input type="text" class="newTransactionText" placeholder="Rent">
-    
-        <label for="number">Amount</label>
-        <input type="number" class="newTransactionAmount" placeholder="0">
-        <p class="amountWarning">* Use negative numbers to indicate it's an expense </p>
+    <div class="newTransactionConteiner">
+
+        <div class="newTransaction">
+            <div class="newTransactionTextWrapper divWrap">
+                <label for="text">New transaction</label>
+                <input type="text" class="newTransactionText" placeholder="Rent">
+            </div>
+            
+            <div class="newTransactionAmountWrapper divWrap">
+                <label for="number">Amount</label>
+                <input type="number" class="newTransactionAmount" placeholder="0">
+            </div>
+        </div>
+         <p class="amountWarning">* Use negative numbers to indicate it's an expense </p>
     </div>
+       
+    
     
     <!-- ADD BUTTON -->
     <h2 class="addButton">Add</h2>
