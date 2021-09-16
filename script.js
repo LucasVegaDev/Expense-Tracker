@@ -104,12 +104,11 @@ function updateBalanceValues() {
     const amountsExpense = amountsArr.filter(item => item < 0);
 
 // Get the total amount of each one with REDUCE
-    totalIncomes = amountsIncome.reduce((acc, item) => (acc += item), 0);
+    totalIncomes = Math.abs(amountsIncome.reduce((acc, item) => (acc += item), 0));
     totalExpenses = Math.abs(amountsExpense.reduce((acc, item) => (acc += item), 0)); 
     
 // Show or Hide Balance's Functions
 globalBalance.innerHTML = `$${totalBalance}`;
-
     showPswImg.addEventListener('click', () => {
         showPswImg.classList.add('hide')
         hidePswImg.classList.remove('hide')
@@ -134,5 +133,4 @@ function init () {
     updateBalanceValues()
     addNewTransaction()
 }
-updateBalanceValues()
 init();
