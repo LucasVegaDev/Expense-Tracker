@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<main class="main">
+    <!-- TITLE -->
+    <h1 class="mainTitle">Expense Tracker</h1>
+    
+    <!-- BALANCE SECTION -->
+    <section class="balanceWrapper">
+    
+    <div class="balanceIntro">
+        <p class="balanceTitle">YOUR BALANCE</p> 
+        <p class="globalBalance">$0</p> 
+        <img class="pswImg showPsw" src="view.png" alt="">
+        <img class="pswImg hidePsw hide" src="hide.png" alt="">
+    </div>
+    
+    <div class="balanceGraphWrapper">
+        <div class="incomeWrapper">
+            <h2 class="title">INCOMES</h2>
+            <p class="number income">+ $0.00</p>
+        </div>
+        <div class="expenseWrapper">
+            <h2 class="title">EXPENSES</h2>
+            <p class="number expense">- $0.00</p>
+        </div>
+    </div>
+    </section>
+    
+    <!-- HISTORY -->
+    <div class="historySection">
+        <div class="historyWrapper">
+            <h2 class="historyTitle">HISTORY</h2>
+            <img class="arrowImg" src="/arrow-down-sign-to-navigate.png" alt="arrow icon">
+        </div>
+        
+        <div class="historyListWrapper">
+            <ul class="historyList">
+                 <!-- <li class="list plus">
+                    <div class="listNameType">
+                        <p class="transactionName">Rent</p>
+                    </div>
+                    <div class="listAmountBtnWrapper">
+                        <span class="transactionAmount">$400</span>
+                        <p class="deleteBtn onclick="deleteFunction()">x</p>
+                    </div>
+                </li>  
+             -->
+            </ul>
+        </div>
+
+
+
+    </div>
+    
+    <!-- NEW TRANSACTION -->
+    <div class="newTransaction">
+        <label for="text">New transaction</label>
+        <input type="text" class="newTransactionText" placeholder="Rent">
+    
+        <label for="number">Amount</label>
+        <input type="number" class="newTransactionAmount" placeholder="0">
+        <p class="amountWarning">* Use negative numbers to indicate it's an expense </p>
+    </div>
+    
+    <!-- ADD BUTTON -->
+    <h2 class="addButton">Add</h2>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
